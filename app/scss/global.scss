@@ -23,7 +23,11 @@
     line-height: 48px;
     color: #fff;
     height: 56px;
-    padding: 0 43px;
+    padding: 0 41px;
     border-radius: 3px;
     text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    &:hover {
+        transition: all .25s ease-in-out;
+    }
 }

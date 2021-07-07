@@ -372,27 +372,120 @@ body {
   line-height: 48px;
   color: #fff;
   height: 56px;
-  padding: 0 43px;
+  padding: 0 41px;
   border-radius: 3px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  transition: all .25s ease-in-out
 }
-.header .welcome-header {
-  padding: 60px 0 0
+.primary-btn:hover {
+  transition: all .25s ease-in-out
+}
+.header.welcome-header {
+  padding: 50px 0 0
+}
+.header__callback-btn {
+  background-image: url(/img/dest/header/header-saw-icon_white.png);
+  background-repeat: no-repeat;
+  background-position: 41px center;
+  padding: 0 41px 0 67px;
+  margin: 0 0 0 30px
+}
+.welcome-header .container {
+  max-width: 1730px
 }
 .nav-logo {
   display: flex;
-  font-family: Roboto
+  align-items: center;
+  font-family: Roboto;
+  text-decoration: none
+}
+.nav-logo__img {
+  margin: 0 10px 0 0
 }
 .nav-logo__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 48px;
-  color: #212121
+  color: #212121;
+  text-transform: uppercase
 }
 .nav-logo__sub-title {
-  font-weight: 300
+  font-weight: 300;
+  font-size: 11px;
+  color: #b2b2b2;
+  letter-spacing: .056em;
+  margin: -10px 0 0 0;
+  text-transform: uppercase
+}
+.nav-logo:hover {
+  text-decoration: none
+}
+.nav-phone {
+  display: flex
+}
+.nav-phone__icon {
+  margin: 0 10px 0 0
+}
+.nav-phone__link {
+  position: relative;
+  font-weight: 800;
+  color: #212121;
+  text-decoration: none
+}
+.nav-phone__link:hover {
+  color: #212121;
+  text-decoration: none
+}
+.nav-phone__link:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -7px;
+  width: 60%;
+  height: 2px;
+  background-color: #212121;
+  transition: all .25s ease-in-out
 }
 .nav {
+  display: flex;
+  align-items: center;
   padding: 30px;
   background-color: #fff
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0;
+  margin: 0 0 0 auto
+}
+.nav__item:not(:first-child) {
+  margin: 0 0 0 45px
+}
+.nav__link {
+  position: relative;
+  color: #148738;
+  text-decoration: none;
+  transition: all .25s ease-in-out
+}
+.nav__link:hover {
+  color: #0f652a;
+  text-decoration: none;
+  transition: all .25s ease-in-out
+}
+.nav__link:hover::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60%;
+  height: 2px;
+  background-color: #0f652a;
+  transition: all .25s ease-in-out
+}
+.nav__phone {
+  margin: 0 0 0 80px
 }

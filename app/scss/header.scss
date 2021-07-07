@@ -2,35 +2,123 @@
     &__nav {
 
     }
-    .welcome-header {
-        padding: 60px 0 0;
+    &.welcome-header {
+        padding: 50px 0 0;
+    }
+    &__callback-btn {
+        background-image: url(/img/dest/header/header-saw-icon_white.png);
+        background-repeat: no-repeat;
+        background-position: 41px center;
+        padding: 0 41px 0 67px;
+        margin: 0 0 0 30px;
     }
 }
+.welcome-header {
+    .container {
+        max-width: 1730px;
+    }
+}
+
 .nav-logo {
     display: flex;
+    align-items: center;
     font-family: Roboto;
-    &__img {}
+    text-decoration: none;
+    &__img {
+        margin: 0 10px 0 0;
+    }
     &__text {}
     &__title {
         font-weight: 700;
         font-size: 24px;
         line-height: 48px;
         color: #212121;
+        text-transform: uppercase;
     }
     &__sub-title {
         font-weight: 300;
+        font-size: 11px;
+        color: #b2b2b2;
+        letter-spacing: 0.056em;
+        margin: -10px 0 0 0;
+        text-transform: uppercase;
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 .nav-phone {
-    &__link {}
+    display: flex;
+    &__icon {
+        margin: 0 10px 0 0;
+    }
+    &__link {
+        position: relative;
+        font-weight: 800;
+        color: #212121;
+        text-decoration: none;
+        &:hover {
+            color: #212121;
+            text-decoration: none;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -7px;
+                width: 60%;
+                height: 2px;
+                background-color: #212121;
+                transition: all .25s ease-in-out;
+            }
+        }
+    }
 }
 
 .nav {
+    display: flex;
+    align-items: center;
     padding: 30px;
     background-color: #fff;
+    
     &__logo {}
-    &__list {}
-    &__item {}
-    &__link {}
-    &__phone {}
+    &__list {
+        display: flex;
+        list-style: none;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 0;
+        margin: 0 0 0 auto;
+    }
+    &__item {
+        &:not(:first-child) {
+            margin: 0 0 0 45px;
+        }
+    }
+    &__link {
+        position: relative;
+        color: #148738;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+        &:hover {
+            color: #0f652a;
+            text-decoration: none;
+            transition: all .25s ease-in-out;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -10px;
+                width: 60%;
+                height: 2px;
+                background-color: #0f652a;
+                transition: all .25s ease-in-out;
+            }
+        }
+    }
+    &__phone {
+        margin: 0 0 0 80px;
+        
+    }
 }
