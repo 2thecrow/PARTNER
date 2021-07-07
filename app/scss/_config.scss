@@ -1,15 +1,20 @@
 // USER VARIABLES SECTION
+:root {
+	--accent-color: #128338;
+    --text-color: #212121;
+    --title-color: #128338;
+}
 
-$accent: orange; // Accent Color
-$fontsize: 16px; // Body Font Size
-$textcolor: #212121; // Text Color
+//$accent: orange; // Accent Color
+$fontsize: 18px; // Body Font Size
+//$textcolor: #212121; // Text Color
 $lineheight: 1.65; // Document Line Height
 $userfont: Rubik, sans-serif; // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 30px;
-$gutter: $grid-gutter-width;
+//$grid-gutter-width: 30px;
+//$gutter: $grid-gutter-width;
 
 // IMPORT SECTION
 
@@ -48,7 +53,7 @@ $gutter: $grid-gutter-width;
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: var(--accent-color);
 	color: #fff;
 }
 
@@ -62,7 +67,7 @@ body {
 	font-family: $userfont;
 	font-size: $fontsize;
 	line-height: $lineheight;
-	color: $textcolor;
+	color: var(--text-color);
 	background-color: #f9f9f9;
 	min-width: 320px;
 	position: relative;

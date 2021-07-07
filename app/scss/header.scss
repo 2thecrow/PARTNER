@@ -2,9 +2,6 @@
     &__nav {
 
     }
-    &.welcome-header {
-        padding: 50px 0 0;
-    }
     &__callback-btn {
         background-image: url(/img/dest/header/header-saw-icon_white.png);
         background-repeat: no-repeat;
@@ -12,10 +9,42 @@
         padding: 0 41px 0 67px;
         margin: 0 0 0 30px;
     }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        padding: 95px 0 0;
+        margin: 0 0 125px 0;
+    }
+    &__about {
+        position: relative;
+        max-width: 475px;
+        margin: 0 30px 0 0;
+        z-index: 2;
+    }
+    &__video {
+        position: relative;
+        
+        z-index: 2;
+    }
 }
 .welcome-header {
-    .container {
+    background-image: url(/img/dest/header/header-bg.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 50px 0 0;
+    &__nav {
         max-width: 1730px;
+    }
+    &__background {
+        position: fixed;
+        top: 0px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background-image: url(/img/dest/header/header-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
@@ -24,6 +53,7 @@
     align-items: center;
     font-family: Roboto;
     text-decoration: none;
+    margin: 0 5px 0 0;
     &__img {
         margin: 0 10px 0 0;
     }
@@ -34,13 +64,14 @@
         line-height: 48px;
         color: #212121;
         text-transform: uppercase;
+        margin: -5px 0 0 0;
     }
     &__sub-title {
         font-weight: 300;
         font-size: 11px;
         color: #b2b2b2;
         letter-spacing: 0.056em;
-        margin: -10px 0 0 0;
+        margin: -12px 0 0 0;
         text-transform: uppercase;
     }
     &:hover {
@@ -49,7 +80,11 @@
 }
 .nav-phone {
     display: flex;
+    align-items: center;
     &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 10px 0 0;
     }
     &__link {
@@ -76,11 +111,12 @@
 }
 
 .nav {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 30px;
     background-color: #fff;
-    
+    z-index: 2;
     &__logo {}
     &__list {
         display: flex;
@@ -122,3 +158,44 @@
         
     }
 }
+
+.header-about {
+    &__title {
+        margin: 0 0 35px 0;
+    }
+    &__text {
+        font-weight: 300;
+        line-height: 32px;
+        margin: 0 0 90px 0;
+    }
+    &__stats {}
+}
+
+.header-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__item {
+        max-width: 150px;
+    }
+    &__icon {
+        margin: 0 0 15px 0;
+    }
+    &__title {
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 40px;
+        color: var(--title-color);
+        /* background-image: linear-gradient(54deg, #328e4c 0%, #209e35 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
+        margin: 0 0 10px 0;
+    }
+    &__desc {
+        line-height: 26px;
+    }
+}
+

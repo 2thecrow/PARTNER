@@ -13,9 +13,10 @@
 </head>
 
 <body>
+	<div class="overlay"></div>
 	
-	<header class="header welcome-header wrapper">
-		<div class="container">
+	<header class="welcome-header header wrapper">
+		<div class="container welcome-header__nav">
 			<nav class="header__nav nav">
 				<a href="/" class="nav__logo nav-logo">
 					<div class="nav-logo__img">
@@ -55,11 +56,101 @@
 				<div class="header__callback-btn primary-btn">
 					Заказать раскрой
 				</div>
+				<div class="burger">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+				</div>
 			</nav>
+		</div>
+		<div class="container">
+			<div class="header__content">
+				<div class="header__about header-about">
+					<div class="header-about__content">
+						<h2 class="header-about__title title">О комплексе</h2>
+						<p class="header-about__text">
+							Производственный комплекс «Партнер центр» 
+							объединяет компании, оказывающие комплекс услуг
+							для производства мебели, как специализирующимся 
+							на этом компаниям, так и частным лицам.
+						</p>
+					</div>
+					<ul class="header-about__stats header-stats">
+						<li class="header-stats__item">
+							<div class="header-stats__icon">
+								<img src="/img/dest/about-area/retail space-icon.png" alt="Торговый зал">
+							</div>
+							<div class="header-stats__title">600</div>
+							<div class="header-stats__desc">м<sup>2</sup>, торговый <br> зал</div>
+						</li>
+						<li class="header-stats__item">
+							<div class="header-stats__icon">
+								<img src="/img/dest/about-area/furniture business -icon.png" alt="Лет в бизнесе">
+							</div>
+							<div class="header-stats__title">13+</div>
+							<div class="header-stats__desc">лет в мебельном бизнесе</div>
+						</li>
+						<li class="header-stats__item">
+							<div class="header-stats__icon">
+								<img src="/img/dest/about-area/warehouse-icon.png" alt="Помещений под склады">
+							</div>
+							<div class="header-stats__title">500</div>
+							<div class="header-stats__desc">м<sup>2</sup>, помещений под склады</div>
+						</li>
+						<li class="header-stats__item">
+							<div class="header-stats__icon">
+								<img src="/img/dest/about-area/workshop-area-icon.png" alt="Площади цехов">
+							</div>
+							<div class="header-stats__title">35-300</div>
+							<div class="header-stats__desc">м<sup>2</sup>, площади цехов</div>
+						</li>
+					</ul>
+				</div>
+				<div class="header__video">
+					<div class="video">
+						<img src="/img/dest/test-layout/test-video.png" alt="">
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
 	
+	<div class="welcome-rent">
 
+	</div>
+
+	<footer class="footer wrapper">
+		<div class="container">
+			<ul class="footer__list">
+				<li class="footer__item footer__item_copyright">
+					ООО «Партнер центр» © 2021
+				</li>
+				<li class="footer__item footer__item_address footer-address">
+					<div class="footer-address__icon">
+						<img src="/img/dest/footer/footer-map-point-icon_black.png" alt="Map point icon">
+					</div>
+					Новокузнецк, ул. 375 км, дом 32, корп. 2
+				</li>
+				<li class="footer__item footer__item_socials">
+					<ul class="socials">
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link_vk"></a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link_instagram"></a>
+						</li>
+						<li class="socials__item">
+							<a href="" class="socials__link socials__link_youtube"></a>
+						</li>
+					</ul>
+				</li>
+				<li class="footer__item footer__item_policy">
+					<a href="" class="footer__link">Политика конфиденциальности</a>
+				</li>
+				<li class="footer__item footer__item_developers">
+					<a href="">Разработка — Айти Сити</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
 	<script src="/js/app.min.js"></script>
 
 </body>
