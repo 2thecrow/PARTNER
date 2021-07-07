@@ -1,0 +1,29 @@
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1430px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.primary-btn {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #128338;
+    /* background-image: linear-gradient( 86deg, #128338 0%, #3ed82e 100%); */
+    box-shadow: 1.219px 9.925px 40px 0px rgba(114, 91, 41, 0.64),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 48px;
+    color: #fff;
+    height: 56px;
+    padding: 0 43px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}

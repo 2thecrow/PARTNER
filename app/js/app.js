@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
 
-	// Custom JS
+"use strict";
 
-})
+document.addEventListener('DOMContentLoaded', function () {// Custom JS
+});

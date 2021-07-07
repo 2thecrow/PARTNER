@@ -1,0 +1,36 @@
+.header {
+    &__nav {
+
+    }
+    .welcome-header {
+        padding: 60px 0 0;
+    }
+}
+.nav-logo {
+    display: flex;
+    font-family: Roboto;
+    &__img {}
+    &__text {}
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 48px;
+        color: #212121;
+    }
+    &__sub-title {
+        font-weight: 300;
+    }
+}
+.nav-phone {
+    &__link {}
+}
+
+.nav {
+    padding: 30px;
+    background-color: #fff;
+    &__logo {}
+    &__list {}
+    &__item {}
+    &__link {}
+    &__phone {}
+}
