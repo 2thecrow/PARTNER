@@ -3,11 +3,26 @@
 
     }
     &__callback-btn {
-        background-image: url(/img/dest/header/header-saw-icon_white.png);
-        background-repeat: no-repeat;
-        background-position: 41px center;
-        padding: 0 41px 0 67px;
-        margin: 0 0 0 30px;
+        .primary-btn {
+            position: relative;
+            background-image: linear-gradient( 8deg, #128338 0%, #34c630 100%);
+            background-repeat: no-repeat;
+            padding: 0 41px 0 67px;
+            margin: 0 0 0 30px;
+            &::before {
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                top: 50%;
+                left: 41px;
+                transform: translateY(-50%);
+                background-image: url(/img/dest/header/header-saw-icon_white.png);
+            }
+            &:hover {
+                background-image: linear-gradient( 8deg, #107632 0%, #29a52d 100%);
+            }
+        }
     }
     &__content {
         display: flex;

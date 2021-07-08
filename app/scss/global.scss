@@ -15,9 +15,6 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--title-color);
-    /* background-image: linear-gradient( 86deg, #128338 0%, #3ed82e 100%); */
-    box-shadow: 1.219px 9.925px 40px 0px rgba(114, 91, 41, 0.64),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
     font-weight: 400;
     font-size: 14px;
     line-height: 48px;
@@ -25,6 +22,7 @@
     height: 56px;
     padding: 0 41px;
     border-radius: 3px;
+    box-shadow: 1.219px 9.925px 40px 0px rgba(114, 91, 41, 0.64),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
     text-transform: uppercase;
     transition: all .25s ease-in-out;
     &:hover {
@@ -158,10 +156,27 @@
 }
 
 .details-order {
+    position: relative;
+    background-image: url(/img/dest/forms/details-order-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px 60px 50px;
+    box-shadow: 0px 32px 64px 0px rgba(224, 224, 224, 0.4);
+    &::before {
+        content: '';
+        position: absolute;
+        top: -35px;
+        right: 0;
+        width: 213px;
+        height: 287px;
+        background-image: url(/img/dest/forms/details-order-decor.png);
+        background-repeat: no-repeat;
+    }
     &__text {
         max-width: 270px;
         font-size: 16px;
         line-height: 28px;
+        margin: 0 0 30px;
     }
     &__btn {
         display: inline-flex;
@@ -172,27 +187,16 @@
         color: var(--white-color);
         padding: 14px 42px;
         border-radius: 3px;
-        background-image: -moz-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
-        background-image: -webkit-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
-        background-image: -ms-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
+        background-image: linear-gradient( 4deg, #128338 0%, #2db732 100%);
         box-shadow: 1.219px 9.925px 40px 0px rgba(114, 91, 41, 0.64),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
         text-decoration: none;
         text-transform: uppercase;
         transition: all .25s ease-in-out;
         &:hover {
             color: var(--white-color);
+            background-image: linear-gradient( 4deg, #107632 0%, #29a52d 100%);
             text-decoration: none;
             transition: all .25s ease-in-out;
         }
-        .Прямоугольник__скругл__углы_3 {
-            
-            position: absolute;
-            left: 1153px;
-            top: 2889px;
-            width: 215px;
-            height: 56px;
-            z-index: 39;
-          }
-          
     }
 }
