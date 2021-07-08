@@ -29,22 +29,12 @@
 }
 .welcome-header {
     background-image: url(/img/dest/header/header-bg.png);
-    background-size: 50% 100%;
+    background-size: 49.2% 100%;
     background-repeat: no-repeat;
     background-position: top right;
     padding: 50px 0 0;
     &__nav {
         max-width: 1730px;
-    }
-    &__background {
-        position: fixed;
-        top: 0px;
-        right: 0;
-        width: 50%;
-        height: 100%;
-        background-image: url(/img/dest/header/header-bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 }
 
@@ -164,8 +154,6 @@
         margin: 0 0 35px 0;
     }
     &__text {
-        font-weight: 300;
-        line-height: 32px;
         margin: 0 0 90px 0;
     }
     &__stats {}

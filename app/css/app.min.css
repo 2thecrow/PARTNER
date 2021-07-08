@@ -1,7 +1,9 @@
+@charset "UTF-8";
 :root {
   --accent-color: #128338;
   --text-color: #212121;
-  --title-color: #128338
+  --title-color: #128338;
+  --white-color: #fff
 }
 *,
 ::after,
@@ -391,6 +393,11 @@ body {
   line-height: 48px;
   color: var(--title-color)
 }
+.desc-text {
+  font-weight: 300;
+  line-height: 32px;
+  color: var(--text-color)
+}
 .video {
   cursor: pointer;
   max-width: 805px;
@@ -432,6 +439,109 @@ body {
   transform: translate(-50%,-50%) scale(1.2) rotate(360deg);
   transition: all .3s ease-in-out
 }
+.poster {
+  position: relative;
+  cursor: pointer;
+  max-width: 565px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 45px 60px 40px;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  text-decoration: none;
+  box-shadow: 1.219px 9.925px 32px 0 rgba(18,131,56,.35)
+}
+.poster__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--title-color);
+  margin: 0
+}
+.poster__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  margin: 20px 0 0 0
+}
+.poster_schema {
+  background-image: url(/img/dest/poster/poster-schema-bg_wood.png)
+}
+.poster_schema .poster__title {
+  max-width: 345px
+}
+.poster_manufacturing {
+  background-image: url(/img/dest/poster/parts-manufacturing-bg.png)
+}
+.poster_manufacturing .poster__title {
+  max-width: 345px
+}
+.poster_manufacturing .poster__text {
+  max-width: 345px
+}
+.poster_facades {
+  background-image: url(/img/dest/poster/production-facades-bg.png)
+}
+.poster_facades .poster__title {
+  max-width: 355px
+}
+.poster_facades .poster__text {
+  max-width: 345px
+}
+.poster::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: all .25s ease-in-out
+}
+.poster:hover {
+  text-decoration: none;
+  color: var(--white-text)
+}
+.poster:hover .poster__title {
+  z-index: 3
+}
+.poster:hover::before {
+  background-color: rgba(18,131,56,.15);
+  transition: all .25s ease-in-out
+}
+.details-order__text {
+  max-width: 270px;
+  font-size: 16px;
+  line-height: 28px
+}
+.details-order__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--white-color);
+  padding: 14px 42px;
+  border-radius: 3px;
+  background-image: -moz-linear-gradient(86deg,#128338 0,#3ed82e 100%);
+  background-image: -webkit-linear-gradient(86deg,#128338 0,#3ed82e 100%);
+  background-image: -ms-linear-gradient(86deg,#128338 0,#3ed82e 100%);
+  box-shadow: 1.219px 9.925px 40px 0 rgba(114,91,41,.64),inset 0 -3px 0 0 rgba(18,131,56,.16);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out
+}
+.details-order__btn:hover {
+  color: var(--white-color);
+  text-decoration: none;
+  transition: all .25s ease-in-out
+}
+.details-order__btn .Прямоугольник__скругл__углы_3 {
+  position: absolute;
+  left: 1153px;
+  top: 2889px;
+  width: 215px;
+  height: 56px;
+  z-index: 39
+}
 .header__callback-btn {
   background-image: url(/img/dest/header/header-saw-icon_white.png);
   background-repeat: no-repeat;
@@ -457,23 +567,13 @@ body {
 }
 .welcome-header {
   background-image: url(/img/dest/header/header-bg.png);
-  background-size: 50% 100%;
+  background-size: 49.2% 100%;
   background-repeat: no-repeat;
   background-position: top right;
   padding: 50px 0 0
 }
 .welcome-header__nav {
   max-width: 1730px
-}
-.welcome-header__background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 100%;
-  background-image: url(/img/dest/header/header-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover
 }
 .nav-logo {
   display: flex;
@@ -583,8 +683,6 @@ body {
   margin: 0 0 35px 0
 }
 .header-about__text {
-  font-weight: 300;
-  line-height: 32px;
   margin: 0 0 90px 0
 }
 .header-stats {
@@ -610,6 +708,156 @@ body {
 }
 .header-stats__desc {
   line-height: 26px
+}
+.welcome-rent {
+  background-image: url(/img/dest/rent/welcome-rent-bg.png);
+  background-size: 49.2% 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 100px 0 130px
+}
+.welcome-rent__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 70px 0
+}
+.welcome-rent__head {
+  flex: 0 0 565px;
+  position: relative;
+  z-index: 2
+}
+.welcome-rent__head .title {
+  margin: 0 0 35px 0
+}
+.welcome-rent__head .desc-text {
+  max-width: 470px
+}
+.welcome-rent__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 130px 0 0
+}
+.welcome-rent__footer .poster:not(:last-child) {
+  margin: 0 0 35px 0
+}
+.welcome-prod__cards {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 565px
+}
+.welcome-prod__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 565px;
+  z-index: 2
+}
+.welcome-prod__header {
+  padding: 5px 0 0
+}
+.welcome-prod__header .title {
+  margin: 0 0 35px 0
+}
+.rent__card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(445px,1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+.rent-card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 445px;
+  width: 100%;
+  height: 440px;
+  padding: 50px 60px;
+  text-decoration: none;
+  overflow: hidden
+}
+.rent-card__img {
+  position: absolute;
+  inset: 0
+}
+.rent-card__img img {
+  width: 100%;
+  height: auto
+}
+.rent-card__content {
+  z-index: 3
+}
+.rent-card__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--white-color);
+  margin: 0 0 25px 0
+}
+.rent-card__description {
+  display: none;
+  opacity: 0;
+  margin: 0 0 35px 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  transition: all .25s ease-in-out
+}
+.rent-card__description.desc-text {
+  color: var(--white-color)
+}
+.rent-card__btn {
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 32px;
+  color: var(--white-color);
+  padding: 7px 33px;
+  border: 1px solid var(--white-color);
+  border-radius: 1px;
+  text-transform: uppercase;
+  transition: all .25s ease-in-out
+}
+.rent-card__btn:hover {
+  background-color: rgba(255,255,255,.2)
+}
+.rent-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .64;
+  z-index: 2;
+  background-image: linear-gradient(90deg,#000 0,rgba(0,0,0,.76) 24%,rgba(0,0,0,0) 100%);
+  background-image: -webkit-linear-gradient(90deg,#000 0,rgba(0,0,0,.76) 24%,rgba(0,0,0,0) 100%);
+  background-image: -ms-linear-gradient(90deg,#000 0,rgba(0,0,0,.76) 24%,rgba(0,0,0,0) 100%)
+}
+.rent-card:hover {
+  text-decoration: none;
+  transition: all .25s ease-in-out
+}
+.rent-card:hover .rent-card__description {
+  display: block;
+  opacity: 1;
+  display: -webkit-box;
+  transition: opacity .25s ease-in-out
+}
+.rent-card:hover .rent-card__btn {
+  display: inline-flex;
+  opacity: 1;
+  transition: opacity .25s ease-in-out
+}
+.rent-card:hover::before {
+  opacity: 1;
+  background-image: none;
+  background-color: rgba(18,131,56,.88);
+  transition: all .1s ease-in-out
 }
 .overlay {
   position: fixed;
@@ -654,8 +902,18 @@ body {
   padding: 0;
   margin: 0
 }
+.footer__item {
+  font-size: 18px;
+  line-height: 18px
+}
+.footer__item__copyright {
+  color: #8f8f8f
+}
 .footer__item_address {
   display: flex
+}
+.footer-address__icon {
+  margin: 0
 }
 .socials {
   display: flex;

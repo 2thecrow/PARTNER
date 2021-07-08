@@ -1,5 +1,3 @@
-
-
 .wrapper {
     max-width: 1920px;
     width: 100%;
@@ -39,6 +37,12 @@
     font-size: 48px;
     line-height: 48px;
     color: var(--title-color);
+}
+
+.desc-text {
+    font-weight: 300;
+    line-height: 32px;
+    color: var(--text-color);
 }
 
 .video {
@@ -81,5 +85,114 @@
             transform: translate(-50%, -50%) scale(1.2) rotate(360deg);
             transition: all .3s ease-in-out;
         }
+    }
+}
+
+.poster {
+    position: relative;
+    cursor: pointer;
+    max-width: 565px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 45px 60px 40px;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    text-decoration: none;
+    box-shadow: 1.219px 9.925px 32px 0px rgba(18, 131, 56, 0.35);
+    &__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        color: var(--title-color);
+        margin: 0;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--text-color);
+        margin: 20px 0 0 0;
+    }
+    &_schema {
+        background-image: url(/img/dest/poster/poster-schema-bg_wood.png);
+        .poster__title {
+            max-width: 345px;
+        }
+    }
+    &_manufacturing {
+        background-image: url(/img/dest/poster/parts-manufacturing-bg.png);
+        .poster__title {
+            max-width: 345px;
+        }
+        .poster__text {
+            max-width: 345px;
+        }
+    }
+    &_facades {
+        background-image: url(/img/dest/poster/production-facades-bg.png);
+        .poster__title {
+            max-width: 355px;
+        }
+        .poster__text {
+            max-width: 345px;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transition: all .25s ease-in-out;
+    }
+    &:hover {
+        text-decoration: none;
+        color: var(--white-text);
+        .poster__title {
+            z-index: 3;
+        }
+        &::before {
+            background-color: rgba(18, 131, 56, .15);
+            transition: all .25s ease-in-out;
+        }
+    }
+}
+
+.details-order {
+    &__text {
+        max-width: 270px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 28px;
+        color: var(--white-color);
+        padding: 14px 42px;
+        border-radius: 3px;
+        background-image: -moz-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
+        background-image: -webkit-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
+        background-image: -ms-linear-gradient( 86deg, rgb(18,131,56) 0%, rgb(62,216,46) 100%);
+        box-shadow: 1.219px 9.925px 40px 0px rgba(114, 91, 41, 0.64),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all .25s ease-in-out;
+        &:hover {
+            color: var(--white-color);
+            text-decoration: none;
+            transition: all .25s ease-in-out;
+        }
+        .Прямоугольник__скругл__углы_3 {
+            
+            position: absolute;
+            left: 1153px;
+            top: 2889px;
+            width: 215px;
+            height: 56px;
+            z-index: 39;
+          }
+          
     }
 }

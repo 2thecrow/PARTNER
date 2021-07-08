@@ -7,7 +7,11 @@
         margin: 0;
     }
     &__item {
-        &__copyright {}
+        font-size: 18px;
+        line-height: 18px;
+        &__copyright {
+            color: #8f8f8f;
+        }
         &_address {
             display: flex;
         }
@@ -18,7 +22,9 @@
 }
 
 .footer-address {
-    &__icon {}
+    &__icon {
+        margin: 0 ;
+    }
 }
 .socials {
     display: flex;

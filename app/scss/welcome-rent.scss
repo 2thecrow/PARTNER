@@ -1,0 +1,56 @@
+.welcome-rent {
+    background-image: url(/img/dest/rent/welcome-rent-bg.png);
+    background-size: 49.2% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 100px 0 130px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 70px 0;
+    }
+    &__head {
+        flex: 0 0 565px;
+        position: relative;
+        z-index: 2;
+        .title {
+            margin: 0 0 35px 0;
+        }
+        .desc-text {
+            max-width: 470px;
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 130px 0 0;
+        .poster {
+            &:not(:last-child) {
+                margin: 0 0 35px 0;
+            }
+        }
+    }
+}
+
+.welcome-prod {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 565px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 0 565px;
+        z-index: 2;
+    }
+    &__header {
+        padding: 5px 0 0;
+        .title {
+            margin: 0 0 35px 0;
+        }
+    }
+    
+}
