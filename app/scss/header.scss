@@ -9,6 +9,7 @@
             background-repeat: no-repeat;
             padding: 0 41px 0 67px;
             margin: 0 0 0 30px;
+            box-shadow: 0.975px 7.94px 32px 0px rgba(14, 176, 68, 0.4),inset 0px -3px 0px 0px rgba(18, 131, 56, 0.16);
             &::before {
                 content: '';
                 position: absolute;
@@ -44,7 +45,7 @@
 }
 .welcome-header {
     background-image: url(/img/dest/header/header-bg.png);
-    background-size: 49.2% 100%;
+    background-size: 48.7% 100%;
     background-repeat: no-repeat;
     background-position: top right;
     padding: 50px 0 0;
@@ -60,7 +61,7 @@
     text-decoration: none;
     margin: 0 5px 0 0;
     &__img {
-        margin: 0 10px 0 0;
+        margin: 5px 10px 0 0;
     }
     &__text {}
     &__title {
@@ -69,7 +70,7 @@
         line-height: 48px;
         color: #212121;
         text-transform: uppercase;
-        margin: -5px 0 0 0;
+        margin: 0 0 0 0;
     }
     &__sub-title {
         font-weight: 300;
@@ -201,4 +202,3 @@
         line-height: 26px;
     }
 }
-

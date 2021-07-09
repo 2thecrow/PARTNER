@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   /* Close aside menu */
 
-  menuClose.addEventListener('click', function () {
+  /* menuClose.addEventListener('click', () => {
     burger.classList.remove('hide');
     menu.classList.remove('open');
     overlay.classList.remove('open');
     unlockScroll();
-  });
+  }); */
+
   /* Remove overlay and unlock screen scroll */
 
   overlay.addEventListener('click', function () {
@@ -51,4 +52,21 @@ document.addEventListener('DOMContentLoaded', function () {
     unlockScroll();
   });
   /* End of Hamburher menu */
+
+  var welcomeBlogSlider = document.querySelector('.welcome-blog-slider');
+
+  if (welcomeBlogSlider) {
+    var BlogSlider = new Swiper(welcomeBlogSlider, {
+      // Optional parameters
+
+      /* loop: true, */
+      slidesPerView: 3,
+      spaceBetween: 32,
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  }
 });

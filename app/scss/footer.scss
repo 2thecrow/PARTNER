@@ -1,6 +1,8 @@
 .footer {
+    padding: 50px 0;
     &__list {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         list-style: none;
         padding: 0;
@@ -9,21 +11,56 @@
     &__item {
         font-size: 18px;
         line-height: 18px;
-        &__copyright {
+        &_copyright {
+            font-size: 14px;    
             color: #8f8f8f;
+            margin: 0 10px 0 0;
         }
         &_address {
             display: flex;
+            font-size: 14px;
+            margin: 0 10px 0 30px;
         }
-        &_socials {}
-        &_policy {}
-        &_developers {}
+        &_socials {
+            margin: 0 10px 0 90px;
+        }
+        &_policy {
+            margin: 0 10px 0 45px;
+            a {
+                font-weight: 700;
+                font-size: 14px;
+                color: var(--text-color);
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline var(--text-color) 2px;
+                    color: var(--text-color);
+                }
+            }
+        }
+        &_developers {
+            
+            margin: 0 0 0 auto;
+            a {
+                font-weight: 700;
+                font-size: 14px;
+                color: var(--text-color);
+                text-decoration: none;
+                span {
+                    font-weight: 400;
+                    color: #858585;
+                }
+                &:hover {
+                    text-decoration: underline var(--text-color) 2px;
+                    color: var(--text-color);
+                }
+            }
+        }
     }
 }
 
 .footer-address {
     &__icon {
-        margin: 0 ;
+        margin: -2px 5px 0 0;
     }
 }
 .socials {
@@ -36,7 +73,7 @@
         background-image: url(/img/dest/footer/socials-item-bg.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: 50% 50%;
         border-radius: 50%;
         &:not(:first-child) {
             margin: 0 0 0 15px;

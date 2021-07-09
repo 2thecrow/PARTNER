@@ -3,12 +3,14 @@
     background-size: 49.2% 100%;
     background-repeat: no-repeat;
     background-position: top left;
-    padding: 100px 0 130px;
+    padding: 95px 0 130px;
     &__header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         margin: 0 0 70px 0;
+    }
+    &__poster {
+        flex: 1;
     }
     &__head {
         flex: 0 0 565px;

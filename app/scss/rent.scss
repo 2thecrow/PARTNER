@@ -41,7 +41,7 @@
         font-size: 32px;
         line-height: 40px;
         color: var(--white-color);
-        margin: 0 0 25px 0;
+        margin: 0;
     }
     &__description {
         display: none;
@@ -84,6 +84,9 @@
     &:hover {
         text-decoration: none;
         transition: all .25s ease-in-out;
+        .rent-card__title {
+            margin: 0 0 25px 0;
+        }
         .rent-card__description {
             display: block;
             opacity: 1;
