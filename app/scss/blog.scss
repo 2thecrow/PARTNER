@@ -14,11 +14,11 @@
     }
     &__img {
         max-width: 445px;
-        height: 265px;
+        height: auto;
         overflow: hidden;
         img {
             width: 100%;
-            height: 100%;
+            height: auto;
             transition: all .3s ease-in-out;
         }
     }
@@ -83,6 +83,20 @@
             margin: 0;
         }
     }
+    &__more {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 48px;
+        color: var(--text-color);
+        letter-spacing: 0.008em;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+        &:hover {
+            color: var(--text-color);
+            text-decoration: underline var(--text-color) 2px;
+            transition: all .25s ease-in-out;
+        }
+    }
     
     .welcome-blog-slider {
         /* margin: 0 0 0 -30px; */
@@ -98,11 +112,8 @@
     &__nav {
         display: flex;
         align-items: center;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 48px;
-        letter-spacing: 0.008em;
-        margin: -22px 0 0 0;
+        
+        margin: -19px 0 0 0;
         .swiper-button-prev,
         .swiper-button-next {
             position: relative;

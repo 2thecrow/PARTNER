@@ -113,6 +113,7 @@
     }
     &_schema {
         background-image: url(/img/dest/poster/poster-schema-bg_wood.png);
+        background-size: cover;
         .poster__title {
             max-width: 345px;
         }
@@ -156,6 +157,7 @@
 
 .details-order {
     position: relative;
+    max-width: 565px;
     background-image: url(/img/dest/forms/details-order-bg.png);
     background-size: cover;
     background-repeat: no-repeat;

@@ -3,7 +3,6 @@
         margin: 0 0 0 60px;
     }
 }
-
 @media screen and (max-width: 1660px) {
     .welcome-header.header {
         &__callback-btn {
@@ -28,7 +27,6 @@
         
     }
 }
-
 @media screen and (max-width: 1450px) {
     .welcome-header .nav-logo {
         &__title {
@@ -50,7 +48,6 @@
         }
     }
 }
-
 @media screen and (max-width: 1400px) {
     .footer {
         padding: 50px 0 40px;
@@ -86,28 +83,62 @@
         }
     }
 }
+@media screen and (max-width: 1442px) {
+    .welcome-rent {
+        background-image: none;
+    }
+    .welcome-rent__poster {
+        margin: 0 30px 0 0;
+    }
+    .welcome-rent__head {
+        flex: 0 0 auto;
+    }
+}
 @media screen and (max-width: 1350px) {
+    .welcome-blog__header {
+        max-width: 920px;
+        margin: 0 auto 40px;
+    }
+    .welcome-blog-slider {
+        max-width: 920px;
+        margin: 0 auto;
+    }
     .welcome-header .nav__list {
         display: none;
     }
     .welcome-header .nav__phone {
         margin: 0 0 0 auto;
     }
-    .welcome-header .header__callback-btn {
-        margin: 0 0 0 30px;
-    }
     .welcome-header .burger {
         display: flex;
     }
 }
 @media screen and (max-width: 1300px) {
+    .contacts.welcome-contacts {
+        padding: 0 0 95px 0;
+    }
+   
+    .welcome-blog {
+        padding: 60px 0;
+    }
+    .welcome-rent__footer {
+        padding: 90px 0 0;
+    }
+    .welcome-rent__header {
+        margin: 0 0 60px 0;
+    }
+    .welcome-rent {
+        padding: 30px 0;
+    }
     .welcome-header {
         background-image: none;
+        padding: 0 0 30px;
     }
     .header {
         &__content {
             flex-direction: column;
             padding: 0;
+            margin: 0;
         }
         &__about {
             display: flex;
@@ -142,6 +173,30 @@
         gap: 30px;
     }
 }
+@media screen and (max-width: 1200px) {
+    .poster_schema {
+        padding: 30px;
+    }
+    .welcome-prod__content,
+    .welcome-prod__cards {
+        max-width: calc(50% - 15px);
+        flex: 0 0 565px;
+    }
+    
+}
+@media screen and (max-width: 1100px) {
+    .welcome-rent__footer .poster {
+        padding: 30px;
+    }
+    .welcome-rent__footer .details-order {
+        padding: 30px;
+    }
+    .welcome-rent__footer .details-order::before {
+        width: 153px;
+        height: 227px;
+        background-size: cover;
+    }
+}
 @media screen and (max-width: 1000px)  {
     .header-about__content {
         max-width: 50%;
@@ -151,6 +206,25 @@
     }
 }
 @media screen and (max-width: 957px) {
+    .welcome-rent {
+        &__footer {
+            flex-direction: column-reverse;
+        }
+    }
+    .welcome-prod__cards, .welcome-prod__content {
+        max-width: 100%;
+        flex: 0;
+    }
+    .welcome-prod__content {
+        justify-content: start;
+    }
+    .welcome-prod__header {
+        padding: 0;
+        margin: 0 0 50px 0;
+    }
+    .welcome-prod__content {
+        margin: 0 0 30px 0;
+    }
     .footer {
         &__list {
             justify-content: start;
@@ -161,17 +235,28 @@
     .footer__item_socials {
         margin-left: 30px;
     }
-}
-@media screen and (max-width: 776px) {
-    .footer__item_address {
-        margin-right: 20px;
+    .welcome-rent__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .footer__item_socials {
-        width: 100%;
-        margin-left: 0;
+    .welcome-rent__head {
+        order: 1;
+        text-align: center;
+    }
+    .welcome-rent__poster {
+        order: 2;
+        margin: 0;
     }
 }
-
+@media screen and (max-width: 950px) {
+    .welcome-blog__header {
+        max-width: 445px;
+    }
+    .welcome-blog-slider {
+        max-width: 445px;
+    }
+}
 @media screen and (max-width: 850px) {
     .header__about {
         flex-direction: column;
@@ -183,17 +268,50 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 800px) {
+    .header__callback-btn{
+        display: none;
+    }
+    .mobile-menu .header__callback-btn {
+        display: flex;
+    }
+}
+@media screen and (max-width: 776px) {
+    .footer__item_address {
+        margin-right: 20px;
+    }
+    .footer__item_socials {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 @media screen and (max-width: 596px) {
     .footer__item_address {
         margin-left: 0;
     }
 }
+@media screen and (max-width: 565px) {
+    .welcome-rent__footer .poster {
+        padding: 20px;
+    }
+    .poster {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .nav__phone {
+        display: none;
+    }
+    .mobile-menu .nav__phone {
+        display: flex;
+    }
+} 
 @media screen and (max-width: 487px) {
     .footer__item_developers {
         margin-left: 0;
     }
 }
-
 @media screen and (max-width: 480px) {
     .header-stats {
         gap: 30px 10px;
