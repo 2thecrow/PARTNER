@@ -107,3 +107,44 @@
     }
     
 }
+
+.rent-page {
+    position: relative;
+    background-image: url(/img/dest/rent/rent-page_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 0 0 525px;
+    
+    &__container {
+        background-color: var(--white-color);
+    }
+    &__description {
+        max-width: 1160px;
+        padding: 125px 0 125px;
+        margin: 0 auto;
+    }
+    &__text {
+        margin: 0 0 30px 0;
+    }
+    &__advantages {
+
+    }
+}
+
+.rent-advantages {
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px 140px;
+        padding: 0 0 0 20px;
+        margin: 0;
+    }
+    &__item {
+        font-weight: 400;
+        line-height: 24px;
+        &::marker {
+            color: var(--accent-color);
+            font-size: 22px;
+        }
+    }
+}

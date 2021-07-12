@@ -1,4 +1,10 @@
 .header {
+    &__inner {
+        background-color: var(--white-color);
+    }
+    &__top {
+        max-width: 1730px;
+    }
     &__nav {
 
     }
