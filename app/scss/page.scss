@@ -1,5 +1,14 @@
-.page .title {
-    text-align: center;
-    color: var(--text-color);
-    margin: 0 0 40px 0;
+.page {
+    .title {
+        text-align: center;
+        color: var(--text-color);
+        margin: 0 0 40px 0;
+    }
+    &__question {
+        padding: 130px 0;
+    }
+    &__rent-list {
+        background-color: #fff;
+        padding: 95px 0;
+    }
 }

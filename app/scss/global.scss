@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 .container-small {
-    max-width: 1160px;
+    max-width: 1190px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -232,6 +232,9 @@
         letter-spacing: 0.008em;
         color: #9d9d9d;
         padding: 0 0 0 20px;
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -254,6 +257,101 @@
         &:hover {
             color: var(--text-color);
             transition: all .25s ease-in-out;
+        }
+    }
+}
+
+.question-form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1160px;
+    width: 100%;
+    background-image: url(/img/dest/forms/question-form-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 45px 65px;
+    margin: 0 auto;
+    border-radius: 3px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -49px;
+        right: 0;
+        width: 270px;
+        height: 242px;
+        background-image: url(/img/dest/forms/question-decor.png);
+        background-repeat: no-repeat;
+
+    }
+    &__text {
+        flex: 0 0 385px;
+        color: var(--white-color);
+        margin: 0 30px 0 0;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 32px;
+        margin: 0 0 20px 0;
+    }
+    &__description {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 0 325px;
+    }
+    &__field {
+        position: relative;
+    }
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 26px;
+        letter-spacing: 0.008em;
+        color: #3ab54b;
+        text-transform: uppercase;
+    }
+    &__input {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: var(--text-color);
+        border-radius: 2px;
+        background-color: #fff;
+        padding: 15px 60px 15px 20px;
+        border: none;
+        &::placeholder {
+            font-weight: 400px;
+            font-size: 14px;
+        line-height: 26px;
+            color: #cecece;
+        }
+          
+    }
+    &__submit {
+        cursor: pointer;
+        position: absolute;
+        top: 9px;
+        right: 9px;
+        width: 40px;
+        height: 40px;
+        background-color: #ededed;
+        background-image: url(/img/dest/forms/send-msg-icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 3px;
+        border: none;
+        transition: all .3s ease-in-out;
+        &:hover {
+            background-color: var(--accent-color);
+            background-image: url(/img/dest/forms/send-msg-icon_white.png);
+            transition: all .3s ease-in-out;
         }
     }
 }

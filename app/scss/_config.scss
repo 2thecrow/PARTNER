@@ -71,6 +71,8 @@ body {
 	color: var(--text-color);
 	background-color: #f9f9f9;
 	min-width: 320px;
+	min-height: 100vh;
+  	text-rendering: optimizeSpeed;
 	position: relative;
 	overflow-x: hidden;
 }
