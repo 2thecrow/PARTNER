@@ -467,6 +467,7 @@ body {
   flex-direction: column;
   padding: 45px 60px 40px;
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 3px;
   text-decoration: none;
   box-shadow: 1.219px 9.925px 32px 0 rgba(18,131,56,.35)
@@ -958,11 +959,6 @@ body {
 }
 .mobile-menu {
   padding: 50px 30px 20px
-}
-.mobile-menu__container {
-  height: 100%;
-  position: relative;
-  overflow: scroll
 }
 .mobile-menu__close {
   position: absolute;
@@ -2199,6 +2195,24 @@ body {
     max-width: 100%;
     flex: 0
   }
+  .welcome-rent__head .desc-text {
+    max-width: 670px
+  }
+  .welcome-prod__header {
+    text-align: center
+  }
+  .welcome-prod__header .desc-text {
+    max-width: 670px
+  }
+  .welcome-prod__content {
+    align-items: center
+  }
+  .welcome-prod__content .details-order {
+    width: 100%
+  }
+  .welcome-prod__cards {
+    align-items: center
+  }
   .welcome-prod__content {
     justify-content: start
   }
@@ -2222,6 +2236,10 @@ body {
     flex-direction: column;
     align-items: center
   }
+  .welcome-rent__poster .poster_schema .poster__title {
+    max-width: 100%;
+    font-size: 26px
+  }
   .welcome-rent__head {
     order: 1;
     text-align: center
@@ -2243,6 +2261,12 @@ body {
   }
 }
 @media screen and (max-width:850px) {
+  .contacts.welcome-contacts {
+    padding: 0
+  }
+  .welcome-contacts .contacts__map-form {
+    margin: 0 auto
+  }
   .header__about {
     flex-direction: column
   }
@@ -2262,6 +2286,13 @@ body {
   }
 }
 @media screen and (max-width:776px) {
+  .rent-page {
+    background-image: none;
+    padding: 0 0 60px
+  }
+  .rent-page__description {
+    padding: 30px 0
+  }
   .rent-advantages__list {
     grid-template-columns: repeat(2,1fr);
     gap: 30px 40px
@@ -2275,8 +2306,29 @@ body {
   }
 }
 @media screen and (max-width:596px) {
+  .welcome-prod__header .title {
+    margin: 0 0 15px 0
+  }
   .footer__item_address {
     margin-left: 0
+  }
+  .header-about {
+    padding: 30px 0
+  }
+  .welcome-header {
+    padding: 0 0 15px
+  }
+  .welcome-rent {
+    padding: 15px 0
+  }
+  .welcome-rent__head .title {
+    margin: 0 0 15px 0
+  }
+  .welcome-rent__poster .poster_schema .poster__title {
+    font-size: 22px
+  }
+  .rent-card {
+    padding: 40px 40px
   }
 }
 @media screen and (max-width:565px) {
@@ -2289,11 +2341,20 @@ body {
   }
 }
 @media screen and (max-width:530px) {
+  .welcome-blog-slider {
+    height: 550px
+  }
   .nav__phone {
     display: none
   }
   .mobile-menu .nav__phone {
     display: flex
+  }
+  .welcome-contacts .contacts__map-form {
+    padding: 50px 40px
+  }
+  .blog-card__content {
+    padding: 20px 30px
   }
 }
 @media screen and (max-width:487px) {
@@ -2306,7 +2367,20 @@ body {
   }
 }
 @media screen and (max-width:480px) {
+  .welcome-rent__footer .details-order::before {
+    display: none
+  }
+  .details-order__text {
+    max-width: 100%;
+    margin: 0 0 20px
+  }
   .header-stats {
     gap: 30px 10px
+  }
+}
+@media screen and (max-width:400px) {
+  .poster__title {
+    font-size: 28px;
+    line-height: 36px
   }
 }
