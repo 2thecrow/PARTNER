@@ -961,16 +961,27 @@ body {
   padding: 50px 30px 20px
 }
 .mobile-menu__close {
+  cursor: pointer;
+  display: inline-flex;
   position: absolute;
   top: 10px;
   left: -22px;
   background-color: var(--accent-color);
   border-radius: 50%;
   padding: 10px;
-  display: inline-flex
+  transition: all .2s ease-in-out
 }
 .mobile-menu__close svg {
-  fill: var(--white-color)
+  fill: var(--white-color);
+  transition: all .2s ease-in-out
+}
+.mobile-menu__close:hover {
+  background-color: var(--white-color);
+  transition: all .2s ease-in-out
+}
+.mobile-menu__close:hover svg {
+  fill: var(--accent-color);
+  transition: all .2s ease-in-out
 }
 .mobile-menu .nav__list {
   display: flex;
@@ -1646,6 +1657,7 @@ body {
 .work-shop-sliders__nav {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   background-color: rgba(249,249,249,.6);
@@ -1718,43 +1730,59 @@ body {
 .work-shop-slider__main {
   height: 770px
 }
+.work-shop-slider__main .swiper-slide {
+  position: relative
+}
 .work-shop-slider__main-nav {
-  position: absolute;
+  position: relative;
   inset: 0
 }
-.work-shop-slider__main-nav .swiper-button-next,
-.work-shop-slider__main-nav .swiper-button-prev {
+.work-shop-slider__main-nav.swiper-button-next {
+  position: relative;
+  min-width: 50px;
   width: 87px;
   height: 96px;
   background-color: #fff;
   background-repeat: no-repeat;
   background-position: center
 }
-.work-shop-slider__main-nav .swiper-button-prev {
-  left: -87px;
-  top: 100%;
-  margin-top: -96px;
+.work-shop-slider__main-nav.swiper-button-prev {
+  position: relative;
+  min-width: 50px;
+  width: 87px;
+  height: 96px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center
+}
+.work-shop-slider__main-nav.swiper-button-prev {
+  left: auto;
+  top: auto;
+  margin-top: 0;
   background-image: url(/img/dest/global/slider/arrow-left.png);
   border-radius: 3px 0 0 0
 }
-.work-shop-slider__main-nav .swiper-button-prev.swiper-button-disabled {
+.work-shop-slider__main-nav.swiper-button-prev.swiper-button-disabled {
   background-image: url(/img/dest/global/slider/arrow-left_disabled.png);
   opacity: 1
 }
-.work-shop-slider__main-nav .swiper-button-next {
-  right: -87px;
-  top: 100%;
-  margin-top: -96px;
+.work-shop-slider__main-nav.swiper-button-next {
+  right: auto;
+  top: auto;
+  margin-top: 0;
   background-image: url(/img/dest/global/slider/arrow-right.png);
   border-radius: 0 3px 0 0
 }
-.work-shop-slider__main-nav .swiper-button-next.swiper-button-disabled {
+.work-shop-slider__main-nav.swiper-button-next.swiper-button-disabled {
   background-image: url(/img/dest/global/slider/arrow-right_disabled.png);
   opacity: 1
 }
 .work-shop-slider__thumbs-container {
+  max-width: calc(990px + 174px);
+  display: flex;
+  justify-content: center;
   position: relative;
-  margin: -96px 0 0 0
+  margin: -96px auto 0
 }
 .work-shop-slider__thumbs {
   max-width: 990px;
@@ -1903,6 +1931,7 @@ body {
   max-width: 1040px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center
 }
 .floors__title {
@@ -2187,6 +2216,12 @@ body {
   }
 }
 @media screen and (max-width:957px) {
+  .work-area-info {
+    padding: 45px 40px 45px
+  }
+  .work-shop-slider__main {
+    height: 670px
+  }
   .welcome-rent__footer {
     flex-direction: column-reverse
   }
@@ -2261,6 +2296,9 @@ body {
   }
 }
 @media screen and (max-width:850px) {
+  .work-area-info {
+    padding: 45px 30px 45px
+  }
   .contacts.welcome-contacts {
     padding: 0
   }
@@ -2286,6 +2324,12 @@ body {
   }
 }
 @media screen and (max-width:776px) {
+  .work-shop-slider__main {
+    height: 570px
+  }
+  .assembly-shop .rent-advantages__list {
+    gap: 25px 30px
+  }
   .rent-page {
     background-image: none;
     padding: 0 0 60px
@@ -2303,6 +2347,26 @@ body {
   .footer__item_socials {
     width: 100%;
     margin-left: 0
+  }
+}
+@media screen and (max-width:750px) {
+  .work-area-info {
+    flex-wrap: wrap
+  }
+  .work-area-info__left,
+  .work-area-info__right {
+    max-width: 100%;
+    width: 100%
+  }
+  .work-area-info__left {
+    margin: 0 0 30px 0
+  }
+  .work-area-info__text {
+    margin: 0 0 30px 0
+  }
+  .work-area-info__list {
+    max-width: 100%;
+    margin: 10px 0 35px 0
   }
 }
 @media screen and (max-width:596px) {
@@ -2332,6 +2396,9 @@ body {
   }
 }
 @media screen and (max-width:565px) {
+  .assembly-shop .rent-advantages__list {
+    grid-template-columns: 1fr
+  }
   .welcome-rent__footer .poster {
     padding: 20px
   }
@@ -2341,6 +2408,9 @@ body {
   }
 }
 @media screen and (max-width:530px) {
+  .work-shop-slider__main {
+    height: 470px
+  }
   .welcome-blog-slider {
     height: 550px
   }

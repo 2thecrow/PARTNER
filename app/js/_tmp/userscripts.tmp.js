@@ -106,43 +106,58 @@ document.addEventListener('DOMContentLoaded', function () {
       $(href).addClass('in');
     }, 200);
   });
+  var slidersMain = document.querySelectorAll('.work-shop-slider__main');
+  var slidersThumbs = document.querySelectorAll('.work-shop-slider__thumbs');
 
-  function workSlidersInit() {
-    $(".work-shop-slider__thumbs").each(function (index, element) {
-      var $this = $(this);
-      $this.addClass("instance-thumbs" + index);
-      $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-      $this.find(".swiper-button-next").addClass("btn-next-" + index);
-      var swiper1 = new Swiper(".instance-thumbs" + index, {
-        observer: true,
-        observeParents: true,
-        spaceBetween: 17,
-        slidesPerView: 'auto',
-        freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true
-      });
+  for (i = 0; i < slidersMain.length; i++) {
+    slidersMain[i].classList.add('gallery-top-' + i);
+    slidersThumbs[i].classList.add('thumbs-class-' + i);
+    var galleryThumbs = new Swiper('.thumbs-class-' + i, {
+      observer: true,
+      observeParents: true,
+      spaceBetween: 17,
+      slidesPerView: 'auto',
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true
     });
-    $(".work-shop-slider__main").each(function (index, element) {
-      var $this = $(this);
-      $this.addClass("instance-main-" + index);
-      $this.find(".swiper-button-prev").addClass("btn-prev-" + index);
-      $this.find(".swiper-button-next").addClass("btn-next-" + index);
-      var swiper2 = new Swiper(".instance-main-" + index, {
-        observer: true,
-        observeParents: true,
-        spaceBetween: 30,
-        slidesPerView: 1,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        },
-        thumbs: {
-          /* swiper:  swiper1, */
-        }
-      });
+    var galleryTop = new Swiper('.gallery-top-' + i, {
+      observer: true,
+      observeParents: true,
+      spaceBetween: 30,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      }
     });
   }
+  /* var swiper1 = new Swiper(".work-shop-slider__thumbs", {
+  		observer: true,
+  	observeParents: true,
+  		
+  	spaceBetween: 17,
+  	slidesPerView: 'auto',
+  	freeMode: true,
+  	watchSlidesVisibility: true,
+  	watchSlidesProgress: true
+  }); */
 
-  workSlidersInit();
+  /* var swiper2 = new Swiper(".work-shop-slider__main", {
+  	observer: true,
+  	observeParents: true,
+  		spaceBetween: 30,
+  	slidesPerView: 1,
+  	navigation: {
+  	nextEl: ".swiper-button-next",
+  	prevEl: ".swiper-button-prev",
+  	},
+  	thumbs: {
+  		swiper:  swiper1,
+  	},
+  }); */
+
 });
