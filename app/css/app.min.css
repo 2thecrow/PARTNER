@@ -2195,6 +2195,14 @@ body {
   }
 }
 @media screen and (max-width:1100px) {
+  .question-form::before {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 170px;
+    height: 142px;
+    background-size: cover
+  }
   .welcome-rent__footer .poster {
     padding: 30px
   }
@@ -2208,6 +2216,25 @@ body {
   }
 }
 @media screen and (max-width:1000px) {
+  .floor-nav__tabs {
+    padding: 90px 0
+  }
+  .page__question {
+    padding: 90px 0
+  }
+  .work-shop-sliders__tab-list {
+    margin: 0 0 90px 0
+  }
+  .question-form {
+    justify-content: space-between;
+    padding: 45px 45px
+  }
+  .question-form__text {
+    flex: 0 0 calc(50% - 15px)
+  }
+  .question-form::before {
+    display: none
+  }
   .header-about__content {
     max-width: 50%
   }
@@ -2296,6 +2323,15 @@ body {
   }
 }
 @media screen and (max-width:850px) {
+  .assembly-shop .rent-advantages__list {
+    margin: 0 0 90px 0
+  }
+  .question-form__text {
+    flex: 0 0 calc(50% - 15px)
+  }
+  .question-form__list {
+    flex: 0 0 calc(50% - 15px)
+  }
   .work-area-info {
     padding: 45px 30px 45px
   }
@@ -2324,6 +2360,15 @@ body {
   }
 }
 @media screen and (max-width:776px) {
+  .floor-nav__tabs {
+    padding: 60px 0
+  }
+  .page__question {
+    padding: 60px 0
+  }
+  .work-shop-sliders__tab-list {
+    margin: 0 0 60px 0
+  }
   .work-shop-slider__main {
     height: 570px
   }
@@ -2369,6 +2414,47 @@ body {
     margin: 10px 0 35px 0
   }
 }
+@media screen and (max-width:650px) {
+  .page .title {
+    margin: 0 0 25px 0
+  }
+  .work-shop-sliders__nav {
+    margin: 0
+  }
+  .work-shop-sliders__nav {
+    justify-content: space-evenly
+  }
+  .work-shop-sliders__nav-item {
+    margin: 0
+  }
+  .work-shop-sliders__nav-item:not(:first-child) {
+    margin: 0
+  }
+  .work-shop-sliders__nav-link {
+    margin: 0 16px 10px
+  }
+  .work-shop-sliders__nav-link_active {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+  }
+  .work-shop-sliders__nav-link_active:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color)
+  }
+  .work-shop-sliders__nav-link:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    margin: 0 0 10px 0
+  }
+  .question-form__text {
+    flex: 0 0 100%;
+    margin: 0 0 15px 0
+  }
+  .question-form__list {
+    max-width: 325px;
+    flex: 0 0 100%
+  }
+}
 @media screen and (max-width:596px) {
   .welcome-prod__header .title {
     margin: 0 0 15px 0
@@ -2396,6 +2482,12 @@ body {
   }
 }
 @media screen and (max-width:565px) {
+  .work-shop-sliders__tab-list {
+    margin: 0 0 30px 0
+  }
+  .assembly-shop .rent-advantages__list {
+    margin: 0 0 60px 0
+  }
   .assembly-shop .rent-advantages__list {
     grid-template-columns: 1fr
   }
@@ -2408,6 +2500,26 @@ body {
   }
 }
 @media screen and (max-width:530px) {
+  .floors__title {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 15px 0
+  }
+  .floors__header {
+    flex-direction: column;
+    align-items: start
+  }
+  .floor-nav {
+    width: 100%
+  }
+  .floor-nav__link {
+    justify-content: center;
+    width: 50%;
+    padding: 4px 10px
+  }
+  .question-form {
+    padding: 45px 25px
+  }
   .work-shop-slider__main {
     height: 470px
   }
