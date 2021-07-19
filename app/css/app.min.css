@@ -1662,7 +1662,7 @@ body {
   list-style: none;
   background-color: rgba(249,249,249,.6);
   border-radius: 3px;
-  padding: 16px 0;
+  padding: 16px 0 6px;
   margin: 0 0 -72px 0;
   z-index: 2
 }
@@ -1672,7 +1672,7 @@ body {
   align-items: center
 }
 .work-shop-sliders__nav-item:not(:first-child) {
-  margin: 0 0 0 70px
+  margin: 0 0 0 55px
 }
 .work-shop-sliders__nav-link {
   position: relative;
@@ -1682,40 +1682,40 @@ body {
   font-weight: 800;
   font-size: 16px;
   line-height: 32px;
-  padding: 4px 0;
-  margin: 0 16px;
+  padding: 4px 16px;
+  margin: 0 0 10px 0;
   color: var(--accent-color)
 }
-.work-shop-sliders__nav-link::before {
+.work-shop-sliders__nav-link span {
+  position: relative;
+  display: block
+}
+.work-shop-sliders__nav-link span::before {
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 11px;
+  bottom: 5px;
   border-bottom: 1px dotted var(--accent-color)
+}
+.work-shop-sliders__nav-link:hover {
+  cursor: pointer;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  text-decoration: none
+}
+.work-shop-sliders__nav-link:hover span::before {
+  display: none
 }
 .work-shop-sliders__nav-link_active {
   color: var(--text-color);
-  background-color: #fff;
-  padding: 4px 16px;
-  margin: 0
+  background-color: var(--white-color)
 }
 .work-shop-sliders__nav-link_active:hover {
   color: var(--text-color);
   cursor: initial
 }
-.work-shop-sliders__nav-link_active::before {
-  display: none
-}
-.work-shop-sliders__nav-link:hover {
-  cursor: pointer;
-  color: var(--text-color);
-  background-color: #fff;
-  padding: 4px 16px;
-  margin: 0;
-  text-decoration: none
-}
-.work-shop-sliders__nav-link:hover::before {
+.work-shop-sliders__nav-link_active span::before {
   display: none
 }
 .work-shop-sliders__tab-list {
@@ -2429,9 +2429,6 @@ body {
   }
   .work-shop-sliders__nav-item:not(:first-child) {
     margin: 0
-  }
-  .work-shop-sliders__nav-link {
-    margin: 0 16px 10px
   }
   .work-shop-sliders__nav-link_active {
     color: var(--white-color);

@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	
 		
 		var href = $(this).attr('href');
-	
+		
 		$(this).addClass('work-shop-sliders__nav-link_active');
 		$(href).addClass('work-shop-sliders__tab_active');
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	/* Flors tabs */
 	$('.floor-nav__link').click(function (e) {
 		e.preventDefault();
-	
+		
 		$('.floor-nav__link').removeClass('floor-nav__link_active');
 		$('.floor-nav__tab').removeClass('floor-nav__tab_active').removeClass('in');
 	
