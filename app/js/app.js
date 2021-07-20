@@ -139,33 +139,4 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
-	
-	/* var swiper1 = new Swiper(".work-shop-slider__thumbs", {
-
-		observer: true,
-		observeParents: true,
-			
-		spaceBetween: 17,
-		slidesPerView: 'auto',
-		freeMode: true,
-		watchSlidesVisibility: true,
-		watchSlidesProgress: true
-	}); */
-
-	/* var swiper2 = new Swiper(".work-shop-slider__main", {
-		observer: true,
-		observeParents: true,
-
-		spaceBetween: 30,
-		slidesPerView: 1,
-		navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-		},
-		thumbs: {
-			swiper:  swiper1,
-		},
-	}); */
-
-	
 })

@@ -1300,12 +1300,26 @@ body {
 .rent-page__text {
   margin: 0 0 30px 0
 }
+.rent-advantages__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 0 55px 0
+}
 .rent-advantages__list {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px 140px;
   padding: 0 0 0 20px;
   margin: 0
+}
+.rent-advantages__row-2 {
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+  margin: 0 0 130px 0
+}
+.rent-advantages .rent-advantages__row-3 {
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px 140px;
+  margin: 0 0 130px 0
 }
 .rent-advantages__item {
   font-weight: 400;
@@ -1643,17 +1657,6 @@ body {
   background-color: #fff;
   padding: 95px 0
 }
-.assembly-shop .rent-advantages__title {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 32px;
-  margin: 0 0 55px 0
-}
-.assembly-shop .rent-advantages__list {
-  grid-template-columns: repeat(2,1fr);
-  gap: 25px;
-  margin: 0 0 130px 0
-}
 .work-shop-sliders__nav {
   position: relative;
   display: flex;
@@ -1848,6 +1851,10 @@ body {
 .work-area-info__right {
   width: calc(50% - 15px)
 }
+.work-area-info__footer {
+  display: flex;
+  justify-content: space-between
+}
 .work-area-info__title {
   font-weight: 400;
   font-size: 32px;
@@ -1856,6 +1863,7 @@ body {
 }
 .work-area-info__badges {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0 0 15px 0
@@ -2323,7 +2331,7 @@ body {
   }
 }
 @media screen and (max-width:850px) {
-  .assembly-shop .rent-advantages__list {
+  .work-shop .rent-advantages__list {
     margin: 0 0 90px 0
   }
   .question-form__text {
@@ -2372,7 +2380,7 @@ body {
   .work-shop-slider__main {
     height: 570px
   }
-  .assembly-shop .rent-advantages__list {
+  .work-shop .rent-advantages__list {
     gap: 25px 30px
   }
   .rent-page {
@@ -2482,10 +2490,10 @@ body {
   .work-shop-sliders__tab-list {
     margin: 0 0 30px 0
   }
-  .assembly-shop .rent-advantages__list {
+  .work-shop .rent-advantages__list {
     margin: 0 0 60px 0
   }
-  .assembly-shop .rent-advantages__list {
+  .work-shop .rent-advantages__list {
     grid-template-columns: 1fr
   }
   .welcome-rent__footer .poster {
